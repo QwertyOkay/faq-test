@@ -344,6 +344,10 @@ a:hover {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn.active.focus,
 .btn.active:focus,
 .btn.focus,
@@ -352,10 +356,6 @@ a:hover {
 .btn:focus {
   outline: none !important;
   outline-offset: none !important;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .main {
@@ -372,6 +372,17 @@ html {
   .header {
     padding: 70px 0px 0px 0px;
   }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {

@@ -365,15 +365,6 @@ html {
   flex-direction: column;
 }
 
-.header {
-  padding: 120px 0px 0px 0px;
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    padding: 70px 0px 0px 0px;
-  }
-}
-
 html,
 body {
   height: 100%;

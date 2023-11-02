@@ -518,6 +518,10 @@ body {
   margin-left: 42px;
   padding: 33px 0px 36px 0px;
 }
+.accordion button .accordion-title:hover {
+  color: #3346d3;
+  cursor: pointer;
+}
 .accordion button .icon {
   position: absolute;
   right: 30px;

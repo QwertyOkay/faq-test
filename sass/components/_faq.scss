@@ -1,0 +1,152 @@
+$bg: #fff;
+$text: #000;
+$gray: #4d5974;
+$lightgray: #aaa79c;
+$blue: #000;
+
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  //   color: $gray;
+}
+
+.container2 {
+  margin: 0 auto;
+  padding: 30px;
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    padding: 4rem;
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+
+.container2__title-faq {
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    button[aria-expanded="true"] {
+      border-bottom: 1px solid $blue;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: $text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      &::after {
+        cursor: pointer;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+    }
+    .accordion-title {
+      padding: 1em 0.5em 1em 0;
+      font-size: 14px;
+      @media screen and (min-width: 1200px) {
+        font-size: 16px;
+      }
+    }
+    .icon {
+      top: 12px;
+      display: inline-block;
+      position: absolute;
+
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+      @media screen and (min-width: 1200px) {
+        top: 15px;
+      }
+    }
+  }
+
+  button[aria-expanded="true"] {
+    color: $blue;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 100em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 2em 0;
+      @media screen and (min-width: 1200px) {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 2em 0;
+        color: #000;
+      }
+    }
+  }
+}
+
+.faqSubtitle {
+  color: #000;
+  font-weight: bold;
+  padding: 1em 0.5em 1em 0;
+  font-size: 16px;
+}

@@ -601,4 +601,14 @@ body {
 
 .icon.minus {
   display: none;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+button[aria-expanded=true] + .accordion-content {
+  max-height: 185px;
 }/*# sourceMappingURL=main.css.map */

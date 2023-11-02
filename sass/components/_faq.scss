@@ -15,8 +15,6 @@ $blue: #000;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Poppins";
 }
 
@@ -65,7 +63,6 @@ body {
     text-align: left;
     width: 100%;
     padding: 1em 0;
-    // color: $text;
     font-size: 1.15rem;
     font-weight: 400;
     border: none;
@@ -118,11 +115,6 @@ body {
   button[aria-expanded="true"] {
     color: $blue;
 
-    // .icon {
-    //   &::after {
-    //     width: 0;
-    //   }
-    // }
     + .accordion-content {
       opacity: 1;
       max-height: 100em;
@@ -143,9 +135,6 @@ body {
     will-change: opacity, max-height;
 
     p {
-      // font-size: 1.3rem;
-      // font-weight: 500;
-      // margin: 2em 0;
       max-width: 80%;
       display: flex;
       justify-content: center;
@@ -155,7 +144,7 @@ body {
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 151.4%; /* 24.224px */
+      line-height: 151.4%;
       margin-left: 42px;
       padding: 33px 0px 36px 0px;
 
@@ -199,7 +188,6 @@ body {
   margin-bottom: 58.5px;
   @media screen and (min-width: 1200px) {
     font-size: 32px;
-    // margin-bottom: 40px;
   }
 }
 

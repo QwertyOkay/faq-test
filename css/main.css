@@ -608,4 +608,8 @@ body {
   .faqTitle {
     font-size: 32px;
   }
+}
+
+.icon.minus {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

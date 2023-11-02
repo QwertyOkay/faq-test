@@ -36,7 +36,6 @@ Sections
 body {
   margin: 0; /* 1 */
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
-  background-color: rgba(222, 217, 162, 0.1215686275) !important;
 }
 
 ::-webkit-scrollbar {
@@ -326,8 +325,7 @@ body {
 }
 
 body {
-  font-family: Nunito, sans-serif !important;
-  background-color: black;
+  background: #fff;
 }
 
 a:hover {
@@ -368,7 +366,7 @@ html {
 }
 
 .header {
-  padding: 20px 0px 0px 0px;
+  padding: 120px 0px 0px 0px;
 }
 @media screen and (min-width: 1200px) {
   .header {

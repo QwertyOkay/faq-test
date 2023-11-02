@@ -1,7 +1,5 @@
 body {
-  font-family: $current-font !important;
-  // color: $first-text-color;
-  background-color: black;
+  background: #fff;
 }
 
 a:hover {
@@ -40,7 +38,7 @@ html {
 }
 
 .header {
-  padding: 20px 0px 0px 0px;
+  padding: 120px 0px 0px 0px;
   @media screen and (min-width: 1200px) {
     padding: 70px 0px 0px 0px;
   }

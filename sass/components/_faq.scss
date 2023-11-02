@@ -174,27 +174,31 @@ body {
   color: #ff6b00;
   text-align: center;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 0px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .faqTitle {
   color: #433b4c;
   font-family: Poppins;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-top: 0px;
   margin-bottom: 58.5px;
   @media screen and (min-width: 1200px) {
-    // font-size: 30px;
+    font-size: 32px;
     // margin-bottom: 40px;
   }
 }

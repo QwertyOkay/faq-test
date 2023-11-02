@@ -59,7 +59,9 @@ body {
   }
   button {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     text-align: left;
     width: 100%;
     padding: 1em 0;
@@ -83,14 +85,17 @@ body {
     .accordion-title {
       color: #7a7a7a;
       font-family: Poppins;
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
       margin-left: 42px;
       padding: 33px 0px 36px 0px;
+      max-width: 260px;
+
       @media screen and (min-width: 1200px) {
-        // font-size: 16px;
+        font-size: 16px;
+        max-width: none;
       }
     }
 
